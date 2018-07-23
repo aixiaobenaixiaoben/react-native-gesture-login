@@ -2,8 +2,8 @@ import React, {Component} from "react"
 import {View, ViewPropTypes} from "react-native"
 import PropTypes from "prop-types"
 
-import style from "./styles/Line"
-import {angleOfPoint, distanceOfPoint, vectorOfPoint} from "./Utils"
+import style from "../styles/Line"
+import {angleOfPoint, distanceOfPoint, vectorOfPoint} from "../utils/Utils"
 
 
 class Line extends Component {

@@ -3,11 +3,11 @@ import {PanResponder, View, ViewPropTypes} from "react-native"
 import PropTypes from "prop-types"
 
 import Line from "./Line"
-import style from "./styles/Board"
+import style from "../styles/Board"
 import Dot from "./Dot"
-import type {Point} from "./Constants"
-import {CLEAR_TIME, DIMENSION_HEIGHT, DIMENSION_WIDTH} from "./Constants"
-import {distanceOfPoint} from "./Utils"
+import type {Point} from "../utils/Constants"
+import {CLEAR_TIME, DIMENSION_HEIGHT, DIMENSION_WIDTH} from "../utils/Constants"
+import {distanceOfPoint} from "../utils/Utils"
 
 class Board extends Component {
 

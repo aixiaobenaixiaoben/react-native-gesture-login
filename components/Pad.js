@@ -2,9 +2,9 @@ import React, {Component} from "react"
 import {View, ViewPropTypes} from "react-native"
 import PropTypes from "prop-types"
 
-import style from "./styles/Pad"
+import style from "../styles/Pad"
 import Dot from "./Dot"
-import {DIMENSION_PAD_HEIGHT, DIMENSION_PAD_WIDTH} from "./Constants"
+import {DIMENSION_PAD_HEIGHT, DIMENSION_PAD_WIDTH} from "../utils/Constants"
 
 class Pad extends Component {
 

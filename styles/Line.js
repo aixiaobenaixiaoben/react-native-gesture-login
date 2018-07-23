@@ -1,5 +1,5 @@
 import {StyleSheet} from "react-native"
-import {COLOR_BLUE_SYS} from "../Constants"
+import {COLOR_BLUE_SYS} from "../utils/Constants"
 
 
 export default StyleSheet.create({
