@@ -1,0 +1,23 @@
+{
+  "name": "react-native-gesture-login",
+  "version": "1.0.0",
+  "description": "Gesture Login Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aixiaobenaixiaoben/react-native-gesture-login"
+  },
+  "keywords": [
+    "react-native",
+    "gesture"
+  ],
+  "author": "aixiaobenaixiaoben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aixiaobenaixiaoben/react-native-gesture-login/issues"
+  },
+  "homepage": "https://github.com/aixiaobenaixiaoben/react-native-gesture-login#readme"
+}
