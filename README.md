@@ -25,7 +25,7 @@ A gesture password component for React Native.
 
 ## Properties
 
-####Gesture
+Gesture
 
 Property | Type | Required | Description
 -------- | ---- | -------- | -----------
@@ -41,7 +41,7 @@ onTouch | func | No | the function triggered when touch first circle
 onRelease | func | No | the function triggered when release screen
 onClear | func | No | the function triggered when gesture area is reset
 
-####GesturePad
+GesturePad
 
 Property | Type | Required | Description
 -------- | ---- | -------- | -----------
