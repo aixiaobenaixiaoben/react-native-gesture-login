@@ -1,7 +1,6 @@
 import React, {Component} from "react"
 import {StyleSheet, Text, View} from "react-native"
-import {Gesture, GesturePad} from "./index"
-import {COLOR_RED, COLOR_RED_02, COLOR_RED_04} from "./utils/Constants"
+import {Gesture, GesturePad} from "react-native-gesture-login"
 
 
 class GestureDemo extends Component {
@@ -79,6 +78,10 @@ class GestureDemo extends Component {
     )
   }
 }
+
+const COLOR_RED = 'rgba(252, 13, 27, 1)'
+const COLOR_RED_02 = 'rgba(252, 13, 27, 0.2)'
+const COLOR_RED_04 = 'rgba(252, 13, 27, 0.4)'
 
 const style = StyleSheet.create({
   view: {
