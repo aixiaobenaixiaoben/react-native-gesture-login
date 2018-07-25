@@ -19,6 +19,9 @@ A gesture password component for React Native.
 
 
 ## Install
+    npm install --save react-native-gesture-login
+    npm install --save prop-types
+    or
     yarn add react-native-gesture-login
     yarn add prop-types
 
