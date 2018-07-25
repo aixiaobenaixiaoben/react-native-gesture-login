@@ -26,6 +26,7 @@ A gesture password component for React Native.
 ## Properties
 
 ###Gesture
+
 Property | Type | Required | Description
 -------- | ---- | -------- | -----------
 width | number | No | width of the gesture area
@@ -41,6 +42,7 @@ onRelease | func | No | the function triggered when release screen
 onClear | func | No | the function triggered when gesture area is reset
 
 ###GesturePad
+
 Property | Type | Required | Description
 -------- | ---- | -------- | -----------
 width | number | No | width of the gesture area
