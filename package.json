@@ -1,6 +1,6 @@
 {
   "name": "react-native-gesture-login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gesture Login Module",
   "main": "index.js",
   "scripts": {
