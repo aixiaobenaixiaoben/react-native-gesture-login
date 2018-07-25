@@ -1,10 +1,10 @@
 # React Native Gesture Login
 
-![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/1.gif)
+![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/60.gif)
 
-![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/11.gif)
+![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/70.gif)
 
-![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/21.gif)
+![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/80.gif)
 
 
 ## Features
