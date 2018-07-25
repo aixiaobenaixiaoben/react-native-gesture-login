@@ -8,9 +8,13 @@ import {angleOfPoint, distanceOfPoint, vectorOfPoint} from "../utils/Utils"
 
 class Line extends Component {
 
+  style
+
   shouldComponentUpdate(nextProps, nextState) {
-    const {tail} = nextProps
-    return !tail
+    const {tail, style} = nextProps
+    const oldStyle = this.style
+    this.style = style
+    return !tail || style !== oldStyle
   }
 
   render() {
