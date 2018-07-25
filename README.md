@@ -12,7 +12,7 @@ A gesture password component for React Native.
 ![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/5.png)
 
 
-# Features
+## Features
 * Supports both iOS and Android.
 * Depends on react, react-native, prop-types.
 * Configurable UI style.
