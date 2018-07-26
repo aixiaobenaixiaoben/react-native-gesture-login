@@ -1,4 +1,11 @@
 # React Native Gesture Login
+[![npm package](https://img.shields.io/npm/v/react-native-gesture-login.svg?style=flat-square)](https://www.npmjs.com/package/react-native-gesture-login)
+[![npm download](https://img.shields.io/npm/dm/react-native-gesture-login.svg?style=flat-square)](https://www.npmjs.com/package/react-native-gesture-login)
+[![platform](https://img.shields.io/badge/platform-iOS%20Android-blue.svg?style=flat-square)](https://github.com/aixiaobenaixiaoben/react-native-gesture-login)
+[![react native](https://img.shields.io/badge/React%20Native-%3E%3Dv0.40-blue.svg?style=flat-square)](https://facebook.github.io/react-native/)
+[![issues](https://img.shields.io/github/issues/aixiaobenaixiaoben/react-native-gesture-login.svg?style=flat-square)](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/issues?q=is%3Aopen)
+[![license](https://img.shields.io/github/license/aixiaobenaixiaoben/react-native-gesture-login.svg?style=flat-square)](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/blob/master/LICENSE)
+
 A gesture password component for React Native.
 
 ![image](https://github.com/aixiaobenaixiaoben/react-native-gesture-login/raw/master/assets/1.png)
