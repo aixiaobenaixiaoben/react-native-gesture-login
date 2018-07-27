@@ -55,8 +55,8 @@ GesturePad
 
 Property | Type | Required | Description
 -------- | ---- | -------- | -----------
-width | number | No | width of the gesture area
-height | number | No | height of the gesture area
+width | number | No | width of the gesture pad area
+height | number | No | height of the gesture pad area
 sequence | string | No | password string only contains 1-9
 circleStyle | ViewPropTypes.style | No | style of circle
 centerStyle | ViewPropTypes.style | No | style of circle's center
