@@ -69,6 +69,7 @@ class Board extends Component {
   }
 
   onGrant = () => {
+    this.clear()
     const { onTouch = () => {}} = this.props
     onTouch()
   }
@@ -113,26 +114,29 @@ class Board extends Component {
     let {
       clearTime = CLEAR_TIME,
       onRelease = (seq) => {},
-      onClear = (seq) => {},
     } = this.props
     onRelease(this.sequence)
 
-    this.timer = setTimeout(() => {
-      onClear(this.sequence)
+    this.timer = setTimeout(this.clear, clearTime)
+  }
 
-      let origin = {x: 0, y: 0}
-      const {points} = this.state
-      for (let id in points) {
-        points[id].lined = false
-      }
-      this.setState({
-        start: origin,
-        current: origin,
-        points,
-        lines: [],
-      })
-      this.sequence = ''
-    }, clearTime)
+  clear = () => {
+    clearTimeout(this.timer)
+    const {onClear = (seq) => {}} = this.props
+    onClear(this.sequence)
+
+    let origin = {x: 0, y: 0}
+    const {points} = this.state
+    for (let id in points) {
+      points[id].lined = false
+    }
+    this.setState({
+      start: origin,
+      current: origin,
+      points,
+      lines: [],
+    })
+    this.sequence = ''
   }
 
   renderLines = () => {
