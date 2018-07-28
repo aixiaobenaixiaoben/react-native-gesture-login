@@ -25,6 +25,7 @@ class Board extends Component {
   pageX
   pageY
   sequence = ''
+  timer
 
   constructor(props: any) {
     super(props)
@@ -51,12 +52,16 @@ class Board extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
+    this.timer = setTimeout(() => {
       this.ref.measure((frameX, frameY, width, height, pageX, pageY) => {
         this.pageX = pageX
         this.pageY = pageY
       })
     }, 0)
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer)
   }
 
   onGrant = () => {
@@ -108,7 +113,7 @@ class Board extends Component {
     } = this.props
     onRelease(this.sequence)
 
-    setTimeout(() => {
+    this.timer = setTimeout(() => {
       onClear(this.sequence)
 
       let origin = {x: 0, y: 0}

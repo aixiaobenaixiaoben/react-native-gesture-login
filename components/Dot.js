@@ -8,6 +8,7 @@ import style from "../styles/Dot"
 class Dot extends Component {
 
   ref
+  timer
   lined = false
   linedCircleStyle
   linedCenterStyle
@@ -29,7 +30,7 @@ class Dot extends Component {
   componentDidMount() {
     const {id, reportCenter} = this.props
     if (reportCenter !== undefined) {
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         this.ref.measure((frameX, frameY, width, height, pageX, pageY) => {
           const radius = 0.5 * width
           const center = {x: frameX + radius, y: frameY + radius}
@@ -37,6 +38,10 @@ class Dot extends Component {
         })
       }, 0)
     }
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer)
   }
 
   render() {
