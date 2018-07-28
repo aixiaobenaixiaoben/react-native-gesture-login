@@ -52,12 +52,16 @@ class Board extends Component {
   }
 
   componentDidMount() {
-    this.timer = setTimeout(() => {
+    this.timer = setInterval(() => {
       this.ref.measure((frameX, frameY, width, height, pageX, pageY) => {
-        this.pageX = pageX
-        this.pageY = pageY
+        if (this.pageX === pageX && this.pageY === pageY) {
+          clearInterval(this.timer)
+        } else {
+          this.pageX = pageX
+          this.pageY = pageY
+        }
       })
-    }, 0)
+    }, 100)
   }
 
   componentWillUnmount() {
