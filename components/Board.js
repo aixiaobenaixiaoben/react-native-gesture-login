@@ -172,7 +172,7 @@ class Board extends Component {
 
     return (
       <View {...this._panResponder.panHandlers} style={{width: this.width, height: this.height}}
-            ref={view => this.ref = view}>
+            ref={view => this.ref = view} collapsable={false}>
 
         {this.renderLines()}
         <Line start={this.state.start} end={this.state.current} style={lineStyle}/>

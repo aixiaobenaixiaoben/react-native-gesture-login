@@ -7,8 +7,6 @@ import style from "../styles/Dot"
 
 class Dot extends Component {
 
-  ref
-  timer
   lined = false
   linedCircleStyle
   linedCenterStyle
@@ -27,21 +25,14 @@ class Dot extends Component {
     return lined !== oldLined || linedCircleStyle !== oldLinedCircleStyle || linedCenterStyle !== oldLinedCenterStyle
   }
 
-  componentDidMount() {
+  layout = (event) => {
     const {id, reportCenter} = this.props
     if (reportCenter !== undefined) {
-      this.timer = setTimeout(() => {
-        this.ref.measure((frameX, frameY, width, height, pageX, pageY) => {
-          const radius = 0.5 * width
-          const center = {x: frameX + radius, y: frameY + radius}
-          reportCenter(id, center, radius)
-        })
-      }, 0)
+      const {x, y, width} = event.nativeEvent.layout
+      const radius = 0.5 * width
+      const center = {x: x + radius, y: y + radius}
+      reportCenter(id, center, radius)
     }
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timer)
   }
 
   render() {
@@ -50,7 +41,7 @@ class Dot extends Component {
     const centerLinedStyle = lined ? [style.centerLined, linedCenterStyle] : []
 
     return (
-      <View style={[style.circle, circleStyle, ...circleLinedStyle]} ref={view => this.ref = view}>
+      <View style={[style.circle, circleStyle, ...circleLinedStyle]} onLayout={this.layout}>
         <View style={[style.center, centerStyle, ...centerLinedStyle]}>
         </View>
       </View>
